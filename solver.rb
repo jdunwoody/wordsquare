@@ -1,4 +1,8 @@
-correct_chars_regexp = Regexp.new(/^[satipndem]+$/i)
+ #!/usr/bin/ruby
+
+abort("Usage #{__FILE__} allowedcharacters") unless ARGV[0]
+
+correct_chars_regexp = Regexp.new(/^[#{ARGV[0]}]+$/i)
 duplicate_chars_regexp = Regexp.new(/(\w).*\1/i)
 
 count = 0
