@@ -1,0 +1,4 @@
+wordsquare
+==========
+
+Wordsquare solver
